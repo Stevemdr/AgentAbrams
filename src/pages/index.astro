@@ -7,24 +7,43 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft))
 ---
 
 <BlogLayout>
-  <div class="hero">
-    <h1>Agent Abrams</h1>
-    <p>Daily dispatches from building with Claude Code. Bugs, breakthroughs, and everything in between.</p>
+  <!-- Hero -->
+  <div class="hero-banner">
+    <div class="hero-left">
+      <h1 class="hero-title">Agent<br/>Abrams</h1>
+      <p class="hero-tagline">Building in public with Claude Code.<br/>Bugs, breakthroughs, and everything in between.</p>
+      <div class="hero-cta">
+        <a href="https://x.com/agentabrams" target="_blank" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Follow @agentabrams
+        </a>
+        <a href="https://github.com/AgentAbrams/Public" target="_blank" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://youtube.com/@agentabrams" target="_blank" class="btn btn-youtube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="/images/launch-meme.png" alt="Agent Abrams Launch Day" class="hero-image" />
+    </div>
   </div>
 
+  <!-- Video -->
   <div class="video-section">
     <h2>Blog Tour</h2>
     <div class="video-wrapper">
       <div class="youtube-embed">
-        <iframe src="https://www.youtube.com/embed/iy9K0VJ74YU" title="Agent Abrams Blog Tour" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/iy9K0VJ74YU" title="Agent Abrams Blog Tour" allowfullscreen loading="lazy"></iframe>
       </div>
-      <noscript>
-        <video controls preload="metadata" poster="/videos/poster.jpg">
-          <source src="/videos/agent-abrams-blog-tour.mp4" type="video/mp4" />
-        </video>
-      </noscript>
     </div>
   </div>
+
+  <!-- Posts -->
+  <h2 class="section-heading">Latest Posts</h2>
 
   {posts.length === 0 && (
     <p style="color: var(--text-muted); text-align: center; padding: 3rem 0;">Posts coming soon.</p>
@@ -53,4 +72,197 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft))
       );
     })}
   </ul>
+
+  <!-- Contact CTA -->
+  <div class="contact-section">
+    <h2>Get In Touch</h2>
+    <p>No gatekeeping. No paywalls. Just a developer sharing the journey.</p>
+    <div class="contact-grid">
+      <a href="https://x.com/agentabrams" target="_blank" class="contact-card">
+        <div class="contact-icon x">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+        <div class="contact-label">@agentabrams</div>
+        <div class="contact-desc">Follow for daily updates</div>
+      </a>
+      <a href="https://github.com/AgentAbrams/Public" target="_blank" class="contact-card">
+        <div class="contact-icon github">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </div>
+        <div class="contact-label">AgentAbrams/Public</div>
+        <div class="contact-desc">Code, skills, and tools</div>
+      </a>
+      <a href="https://youtube.com/@agentabrams" target="_blank" class="contact-card">
+        <div class="contact-icon youtube">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+        <div class="contact-label">YouTube</div>
+        <div class="contact-desc">Walkthroughs and demos</div>
+      </a>
+      <a href="mailto:agent@goodquestion.ai" class="contact-card">
+        <div class="contact-icon email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div class="contact-label">Email</div>
+        <div class="contact-desc">agent@goodquestion.ai</div>
+      </a>
+    </div>
+  </div>
 </BlogLayout>
+
+<style>
+  /* Hero Banner */
+  .hero-banner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0;
+  }
+  .hero-left { flex: 1; }
+  .hero-right { flex-shrink: 0; }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0 0 0.75rem;
+    background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 50%, #a371f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-tagline {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  .hero-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 16px;
+    border: 2px solid var(--border);
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+
+  /* CTA Buttons */
+  .hero-cta {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+  .btn:hover { transform: translateY(-1px); text-decoration: none; }
+  .btn-primary {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+  .btn-primary:hover { background: #e0e0e0; color: #000; }
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--border);
+  }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-youtube {
+    background: transparent;
+    color: #ff0000;
+    border-color: rgba(255,0,0,0.3);
+  }
+  .btn-youtube:hover { border-color: #ff0000; background: rgba(255,0,0,0.1); color: #ff0000; }
+
+  /* Section Heading */
+  .section-heading {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Contact Section */
+  .contact-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .contact-section h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.25rem;
+    border: none;
+    padding: 0;
+  }
+  .contact-section > p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem 0.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg-primary);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .contact-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+  }
+  .contact-icon.x { background: rgba(255,255,255,0.1); color: #fff; }
+  .contact-icon.github { background: rgba(88,166,255,0.1); color: #58a6ff; }
+  .contact-icon.youtube { background: rgba(255,0,0,0.1); color: #ff0000; }
+  .contact-icon.email { background: rgba(63,185,80,0.1); color: #3fb950; }
+  .contact-label {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+  .contact-desc {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero-banner { flex-direction: column-reverse; text-align: center; }
+    .hero-image { width: 160px; height: 160px; }
+    .hero-cta { justify-content: center; }
+    .hero-title { font-size: 2.2rem; }
+    .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
