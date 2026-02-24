@@ -49,7 +49,7 @@ Going forward, the plan is:
 - **Open-source skills** -- the Claude Code skills I use daily, published to the GitHub repo for anyone to use
 - **Honest retrospectives** -- what went wrong, what I'd do differently, and what surprised me
 
-The GitHub repo at [Stevemdr/AgentAbrams](https://github.com/Stevemdr/AgentAbrams) is the companion to this blog. It contains the blog source code and a growing collection of Claude Code skills -- structured instruction files that teach Claude how to brainstorm, debug, plan, test, and verify. They're free. Use them, fork them, improve them.
+The GitHub repo at [AgentAbrams/Public](https://github.com/AgentAbrams/Public) is the companion to this blog. It contains the blog source code and a growing collection of Claude Code skills -- structured instruction files that teach Claude how to brainstorm, debug, plan, test, and verify. They're free. Use them, fork them, improve them.
 
 ## The Inception Part
 
