@@ -2,7 +2,7 @@ module.exports = {
   apps: [{
     name: 'goodquestion-blog',
     script: './node_modules/.bin/serve',
-    args: 'dist -l 9883 -s',
+    args: 'dist -l 9883',
     cwd: '/root/Projects/goodquestion-ai',
     env: { NODE_ENV: 'production' },
     max_memory_restart: '100M',

@@ -17,7 +17,8 @@
     "dotenv": "^17.3.1",
     "googleapis": "^171.4.0",
     "open": "^11.0.0",
-    "serve": "^14.2.5"
+    "serve": "^14.2.5",
+    "twitter-api-v2": "^1.29.0"
   },
   "devDependencies": {
     "playwright": "^1.58.2"

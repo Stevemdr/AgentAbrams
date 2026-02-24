@@ -39,7 +39,7 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft))
       });
       return (
         <li>
-          <a href={`/posts/${post.id}/`} class="post-card">
+          <a href={`/posts/${post.id.replace(/^\d{4}-\d{2}-\d{2}-/, '')}/`} class="post-card">
             <div class="post-card-meta">{formattedDate}</div>
             <div class="post-card-title">{post.data.title}</div>
             <div class="post-card-description">{post.data.description}</div>
