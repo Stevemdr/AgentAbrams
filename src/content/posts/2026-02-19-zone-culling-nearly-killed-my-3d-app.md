@@ -9,7 +9,7 @@ I almost shipped a 3D application that rendered a black screen on every room tra
 
 ## The Setup
 
-I was building a multi-room 3D visualization -- think virtual showroom where users navigate between distinct spaces. Each room had between 50 and 400 objects: walls, floors, furniture, textures, lights. The entire scene graph held 2,320 objects.
+I was building a multi-room 3D visualization -- think virtual workspace where users navigate between distinct spaces. Each room had between 50 and 400 objects: walls, floors, furniture, textures, lights. The entire scene graph held 2,320 objects.
 
 Performance was fine on desktop but sluggish on tablets. So I did what any reasonable developer would do: I added culling.
 
