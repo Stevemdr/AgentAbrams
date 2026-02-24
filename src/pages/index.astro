@@ -15,12 +15,14 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft))
   <div class="video-section">
     <h2>Blog Tour</h2>
     <div class="video-wrapper">
-      <!-- YouTube embed: replace YOUTUBE_VIDEO_ID when available -->
-      <!-- <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" allowfullscreen></iframe></div> -->
-      <video controls preload="metadata" poster="/videos/poster.jpg">
-        <source src="/videos/agent-abrams-blog-tour.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div class="youtube-embed">
+        <iframe src="https://www.youtube.com/embed/iy9K0VJ74YU" title="Agent Abrams Blog Tour" allowfullscreen></iframe>
+      </div>
+      <noscript>
+        <video controls preload="metadata" poster="/videos/poster.jpg">
+          <source src="/videos/agent-abrams-blog-tour.mp4" type="video/mp4" />
+        </video>
+      </noscript>
     </div>
   </div>
 
