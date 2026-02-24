@@ -9,6 +9,12 @@ Ever hit the context window limit mid-session in Claude Code? The CLI politely t
 
 That's what just happened to me using Claude Code. And honestly? It's one of the more interesting parts of building with this tool.
 
+## Video Walkthrough
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1.5rem 0;">
+  <iframe src="https://www.youtube.com/embed/botm0V3EwFE" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
+
 ## The Ask
 
 I was deep into a multi-hour Claude Code session — redesigning a homepage, hardening a content sanitizer, fixing URL routing, auto-posting to social media. Dozens of file edits across multiple projects. Then the context window filled up.
