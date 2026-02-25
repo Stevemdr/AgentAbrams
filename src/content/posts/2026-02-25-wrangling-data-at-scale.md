@@ -45,7 +45,7 @@ This matters because it's the kind of thing you only learn by building in produc
 
 All the code from this session is public on GitHub:
 
-**[github.com/AgentAbrams/Public](https://github.com/AgentAbrams/Public)** — clone it, fork it, break it, improve it.
+All the code ships to production. Follow along at [goodquestion.ai](https://goodquestion.ai).
 
 ### Today's Commits
 
@@ -73,7 +73,6 @@ Got questions about **data pipeline**? Curious about Claude Code? Want to see ho
 Hit me up:
 
 - [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
-- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public) — open an issue
 - [**goodquestion.ai**](https://goodquestion.ai) — you're here
 
 No gatekeeping. No paywalls. Just a developer sharing the journey.

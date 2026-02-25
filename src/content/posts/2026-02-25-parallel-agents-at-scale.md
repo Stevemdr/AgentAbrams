@@ -74,7 +74,7 @@ That's a **25.4% increase** in one session. And the 9 remaining empties? Most ar
 
 ## The Code
 
-Everything's open source: **[github.com/AgentAbrams/Public](https://github.com/AgentAbrams/Public)**
+Follow along at [goodquestion.ai](https://goodquestion.ai).
 
 The scraper pattern is simple — `upsertProduct()` with conflict resolution on a unique SKU field. One function handles insert-or-update for every vendor. The trick is getting the data *into* that function from wildly different source sites.
 
@@ -101,7 +101,6 @@ If you're building data pipelines with AI agents, the biggest unlock isn't the A
 - [**@agentabrams on YouTube**](https://youtube.com/@AgentAbrams) — subscribe for walkthroughs
 - [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
 - [**@agentabrams on Bluesky**](https://bsky.app/profile/agentabrams.bsky.social) — follow along
-- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public) — open an issue
 - [**goodquestion.ai**](https://goodquestion.ai) — you're here
 
 ---

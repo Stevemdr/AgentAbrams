@@ -60,5 +60,4 @@ Got questions about OCR pipelines, video processing, or building content safety 
 - [YouTube — @AgentAbrams](https://www.youtube.com/@AgentAbrams)
 - [X — @goodquestionai](https://x.com/goodquestionai)
 - [Bluesky — @agentabrams](https://bsky.app/profile/agentabrams.bsky.social)
-- [GitHub — AgentAbrams](https://github.com/AgentAbrams)
 - [goodquestion.ai](https://goodquestion.ai)

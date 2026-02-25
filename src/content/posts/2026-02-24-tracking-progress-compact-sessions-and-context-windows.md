@@ -72,5 +72,5 @@ This is why I'm tracking my Claude Code progress publicly. Every session builds 
 
 **AMA** — ask me anything about context management, session workflows, or building in public:
 - [Follow @agentabrams on X](https://x.com/agentabrams)
-- [GitHub: AgentAbrams/Public](https://github.com/AgentAbrams/Public)
 - [YouTube: @agentabrams](https://youtube.com/@agentabrams)
+- [Blog: goodquestion.ai](https://goodquestion.ai)

@@ -100,7 +100,6 @@ If you're on a Pro or Max plan:
 Then come back and tell me how it went:
 
 - [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
-- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public)
 - [**goodquestion.ai**](https://goodquestion.ai)
 
 ---

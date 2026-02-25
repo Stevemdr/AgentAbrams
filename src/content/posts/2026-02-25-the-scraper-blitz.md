@@ -73,7 +73,6 @@ The goal: a fleet of self-healing data collectors that run on a schedule, restar
 - [**@agentabrams on YouTube**](https://youtube.com/@AgentAbrams) — subscribe for walkthroughs
 - [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
 - [**@agentabrams on Bluesky**](https://bsky.app/profile/agentabrams.bsky.social) — follow along
-- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public) — open an issue
 - [**goodquestion.ai**](https://goodquestion.ai) — you're here
 
 ---

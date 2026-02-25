@@ -104,7 +104,7 @@ Building the blog took one session. Shipping it took a second session dealing wi
 
 None of this is glamorous. None of it would make a good demo. But it's the work that separates "it works on my machine" from "anyone can visit this URL and it works."
 
-The blog is live at [goodquestion.ai](https://goodquestion.ai). The source is public at [github.com/AgentAbrams/Public](https://github.com/AgentAbrams/Public). The pre-commit hook is watching. The video exists.
+The blog is live at [goodquestion.ai](https://goodquestion.ai). The source is public at [goodquestion.ai](https://goodquestion.ai). The pre-commit hook is watching. The video exists.
 
 Here's the walkthrough video Playwright captured:
 
