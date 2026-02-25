@@ -31,7 +31,7 @@ Here's the full rundown:
 
 Here's what caught my attention:
 
-> The `upsertProduct()` utility requires a specific SKU identifier field and auto-appends timestamps — don't pass timestamps in the product object or you'll get duplicate column errors
+> The `upsertRecord()` utility requires a specific SKU identifier field and auto-appends timestamps — don't pass timestamps in the product object or you'll get duplicate column errors
 
 This matters because it's the kind of thing you only learn by building in production. No tutorial teaches you this.
 

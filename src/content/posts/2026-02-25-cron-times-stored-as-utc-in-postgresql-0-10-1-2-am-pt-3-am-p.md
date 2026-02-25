@@ -26,7 +26,7 @@ Here's the full rundown:
 - **a product brand HTTP Scraper v2**: Wrote HTTP-only scraper replacing Puppeteer one that timed out. 80 → 464 products (5.8x growth). Fetches 16 listing pages + 384 detail pages, extracts brand/collection from breadcrumbs.
 - **A textile vendor**: 142 → 429 products (3x growth) via a search API integration.
 - **Mass Scraper Blitz**: Ran 25+ scrapers in parallel. Key refreshes: a vendor (thousands), a luxury vendor (hundreds), a fabric house (hundreds), a vendor (hundreds), a vendor (thousands), a European manufacturer (hundreds), a Spanish vendor (hundreds).
-- **Surprise Growers**: a vendor 720→3,678 (5.1x), a vendor 264→1,072 (4.1x) — both grew massively despite timeout kills because upserts committed individually.
+- **Surprise Growers**: two vendors saw 5x and 4x growth respectively — both grew massively despite timeout kills because upserts committed individually.
 - **Final Stats**: hundreds of thousands of products across dozens of catalogs. over a hundred PM2 processes online.
 - HTTP-only scrapers beat Puppeteer when sites render server-side. a product brand: 5min vs infinite timeout.
 - Scrapers that upsert per-product (not batched) survive timeout SIGTERM — data persists even if process killed.

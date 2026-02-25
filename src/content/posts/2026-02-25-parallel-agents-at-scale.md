@@ -33,7 +33,7 @@ The fun part is discovery. Each data source is a puzzle:
 - **Two sites** had their domains expire mid-project. One redirected to a French parking page. RIP.
 - **One brand** went bankrupt in 2020. The scraper bravely attempted three different strategies before confirming zero products.
 - **A German manufacturer** had an incomplete SSL certificate chain. Fix: `NODE_TLS_REJECT_UNAUTHORIZED=0`.
-- **A Spanish brand** served 2,863 products via WordPress REST API — but the taxonomy map fetch was so slow the scraper kept timing out at 10 minutes. Fix: bump to 15 minutes.
+- **A Spanish brand** served thousands of products via WordPress REST API — but the taxonomy map fetch was so slow the scraper kept timing out at 10 minutes. Fix: bump to 15 minutes.
 
 ## The Puppeteer-to-Playwright Migration
 
@@ -76,7 +76,7 @@ That's a **25.4% increase** in one session. And the 9 remaining empties? Most ar
 
 Follow along at [goodquestion.ai](https://goodquestion.ai).
 
-The scraper pattern is simple — `upsertProduct()` with conflict resolution on a unique SKU field. One function handles insert-or-update for every vendor. The trick is getting the data *into* that function from wildly different source sites.
+The scraper pattern is simple — `upsertRecord()` with conflict resolution on a unique SKU field. One function handles insert-or-update for every vendor. The trick is getting the data *into* that function from wildly different source sites.
 
 ## What's Next
 
