@@ -18,18 +18,18 @@ Building them one at a time? That's a week of work. I had a few hours.
 Here's the approach: **dispatch 6 independent builder agents simultaneously**, each assigned a batch of vendors to scrape. Each agent:
 
 1. Reads the existing scraper pattern from a reference implementation
-2. Investigates the target site (is it WooCommerce? Shopify? Custom CMS? WordPress REST API?)
+2. Investigates the target site (is it WooCommerce? A hosted platform? Custom CMS? REST API?)
 3. Writes a complete scraper following the established conventions
 4. Runs it and reports results
 
-The key insight: these tasks are **embarrassingly parallel**. Agent 1 building a Shopify scraper doesn't block Agent 3 building a WordPress scraper. So run them all at once.
+The key insight: these tasks are **embarrassingly parallel**. Agent 1 building an e-commerce scraper doesn't block Agent 3 building a WordPress scraper. So run them all at once.
 
 ## What Each Agent Found
 
 The fun part is discovery. Each data source is a puzzle:
 
 - **One site** turned out to be a PrestaShop store (not WooCommerce). The agent parsed sitemap XML instead.
-- **Another** was actually a Shopify store masquerading as a custom site. Quick pivot to the `/products.json` endpoint.
+- **Another** was actually a hosted e-commerce store masquerading as a custom site. Quick pivot to the standard product API endpoint.
 - **Two sites** had their domains expire mid-project. One redirected to a French parking page. RIP.
 - **One brand** went bankrupt in 2020. The scraper bravely attempted three different strategies before confirming zero products.
 - **A German manufacturer** had an incomplete SSL certificate chain. Fix: `NODE_TLS_REJECT_UNAUTHORIZED=0`.
@@ -64,7 +64,7 @@ That's a **25.4% increase** in one session. And the 9 remaining empties? Most ar
 
 1. **Parallel agents beat sequential every time** when tasks are independent. 6 agents finishing in 30 minutes beats 1 agent finishing in 3 hours.
 
-2. **Every site is different.** PrestaShop, Shopify, WooCommerce, WordPress REST API, custom AJAX, Cowtan design API — you can't assume anything.
+2. **Every site is different.** PrestaShop, hosted platforms, WooCommerce, WordPress REST API, custom AJAX, vendor design APIs — you can't assume anything.
 
 3. **Timeouts lie.** A scraper that "timed out" may have completed all its DB writes. Check the database before re-running.
 
@@ -85,6 +85,24 @@ The scraper pattern is simple — `upsertProduct()` with conflict resolution on 
 - A command center dashboard shows all vendors, product counts, and last-crawl dates in real time
 
 If you're building data pipelines with AI agents, the biggest unlock isn't the AI — it's the parallelism.
+
+## Watch the Video
+
+**[Parallel Agents: 6 Claude Code Agents, One Mission | Agent Abrams](https://youtu.be/Ug0CYFPv1Xs)**
+
+<div class="youtube-embed">
+  <iframe src="https://www.youtube.com/embed/Ug0CYFPv1Xs" title="Parallel Agents: 6 Claude Code Agents, One Mission | Agent Abrams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[**Subscribe to @AgentAbrams on YouTube**](https://youtube.com/@AgentAbrams) for new videos every week.
+
+## Follow Along
+
+- [**@agentabrams on YouTube**](https://youtube.com/@AgentAbrams) — subscribe for walkthroughs
+- [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
+- [**@agentabrams on Bluesky**](https://bsky.app/profile/agentabrams.bsky.social) — follow along
+- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public) — open an issue
+- [**goodquestion.ai**](https://goodquestion.ai) — you're here
 
 ---
 *Built with [Claude Code](https://claude.ai). 6 parallel agents. 117,902 records. Zero staging environments.*

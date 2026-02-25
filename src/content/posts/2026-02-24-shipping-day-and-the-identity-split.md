@@ -38,7 +38,7 @@ git diff --cached --name-only | xargs grep -lE "$BLOCKED"
 
 This is the poor man's secret scanner. It catches the obvious stuff: connection strings, IP addresses with ports, common credential patterns. For a personal blog it's sufficient. For a team project, you'd want something like `gitleaks` or `trufflehog` running in CI.
 
-One gotcha: case-insensitive matching produces false positives. The word "started" contains "arte," and "cluster" contains "lust." Word boundaries help:
+One gotcha: case-insensitive matching produces false positives. The word "started" contains a vendor name substring, and "cluster" contains another. Word boundaries help:
 
 ```bash
 # Better: use word boundaries

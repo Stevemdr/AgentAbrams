@@ -22,9 +22,9 @@ Here's the full rundown:
 
 - **Bluesky integration**: Created `scripts/bsky-post.cjs` using `@atproto/api`, posted 2 Bluesky posts
 - **YouTube walkthrough video**: Captured 5 dashboard screenshots with Playwright, assembled into 25s video with ffmpeg text overlays, uploaded to YouTube: https://www.youtube.com/watch?v=5un2PCEhtmw
-- **Catchii scraper rebuilt**: Fixed corrupted file (truncated + `\!` syntax error), fixed column mismatch (`vendor_sku` → `mfr_sku`), fixed `last_scraped` duplicate assignment → **666 products cataloged**
+- **Vendor scraper rebuilt**: Fixed corrupted file (truncated + `\!` syntax error), fixed column mismatch (`vendor_sku` → `mfr_sku`), fixed `last_scraped` duplicate assignment → **666 products cataloged**
 - **Catalog total**: 93,709 (up from 92,289, +1,420)
-- **Ran 10 scrapers**: Catchii (666), Marburg (0 - API blocked), Folia (0 - portal offline), Coordonne/a vendor/Borastapeter/Gaston (timeout - Puppeteer SPAs), Spoonflower/a trade vendor (timeout)
+- **Ran 10 scrapers**: One vendor (666 products), one blocked by API, one portal offline, four Puppeteer SPA timeouts, two general timeouts
 - **Twitter still rate-limited**: 429 from previous session, need to wait
 
 ## The Interesting Part
@@ -37,8 +37,8 @@ This matters because it's the kind of thing you only learn by building in produc
 
 **Quick hits from today:**
 
-- Puppeteer scrapers for Angular/JS SPAs (a vendor, Borastapeter, Gaston) need 300s+ timeouts and often fail silently
-- WooCommerce Store API scrapers are fast but some sites (Marburg) block the API
+- Puppeteer scrapers for Angular/JS SPAs need 300s+ timeouts and often fail silently
+- WooCommerce Store API scrapers are fast but some vendors block the API entirely
 - Bluesky AT Protocol is much simpler than Twitter OAuth — just username/password login
 
 ## Show Me The Code

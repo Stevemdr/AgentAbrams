@@ -39,7 +39,7 @@ The pipeline runs in seven stages:
 
 ## Results
 
-Scanned five videos (287 total frames). Four were clean. One had "Shopify" visible in a dashboard for 8 seconds — 40 detection hits across 8 frames. After processing: zero detections on re-scan.
+Scanned five videos (287 total frames). Four were clean. One had a platform name visible in a dashboard for 8 seconds — 40 detection hits across 8 frames. After processing: zero detections on re-scan.
 
 The whole pipeline — extract, scan, blur, mux — runs in about 2 minutes for a 50-second video. Good enough for a pre-publish gate.
 

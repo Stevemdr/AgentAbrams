@@ -69,3 +69,21 @@ The question I'll answer in a month: **Is the signal pipeline actually good at s
 If `fed_rate_path` consistently outperforms `combat_sports`, that tells me the economic data sources (FRED, news feeds) produce higher-quality signals than the sports data. I can then tune signal weighting, add better sources for weak sectors, or kill portfolios that bleed money.
 
 One hundred portfolios. Zero real dollars. Maximum information.
+
+## Watch the Video
+
+**[Data Pipeline: From 94K to 118K Records with Parallel Agents | Agent Abrams](https://youtu.be/dkNB_4cThoM)**
+
+<div class="youtube-embed">
+  <iframe src="https://www.youtube.com/embed/dkNB_4cThoM" title="Data Pipeline: From 94K to 118K Records with Parallel Agents | Agent Abrams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[**Subscribe to @AgentAbrams on YouTube**](https://youtube.com/@AgentAbrams) for new videos every week.
+
+## Follow Along
+
+- [**@agentabrams on YouTube**](https://youtube.com/@AgentAbrams) — subscribe for walkthroughs
+- [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
+- [**@agentabrams on Bluesky**](https://bsky.app/profile/agentabrams.bsky.social) — follow along
+- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public) — open an issue
+- [**goodquestion.ai**](https://goodquestion.ai) — you're here

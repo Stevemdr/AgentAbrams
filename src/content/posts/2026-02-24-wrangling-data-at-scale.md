@@ -4,7 +4,7 @@ description: "the price agent `price_field` from an e-commerce platform = **samp
 date: 2026-02-24
 tags: ["api","oauth"]
 ---
-Started the day with coffee and a Claude Code terminal. Here's what happened next.
+Grabbed the keyboard at 6am. By noon, we had something real. Here's the story.
 
 ## The Ask
 
@@ -50,13 +50,13 @@ All the code from this session is public on GitHub:
 
 ### Today's Commits
 
-Shipped 19 commits:
+Shipped 20 commits:
 
+- `90f6555` feat: add two-voice podcast + Bluesky SDK integration
+- `d70b115` blog: add Tracking Progress with Claude Code post + YouTube video
+- `a61956d` blog: auto-publish "Wrangling Data at Scale"
 - `c9a398a` feat: redesign homepage with hero banner, CTA buttons, and contact section
 - `aeb68b8` security: harden sanitizer — block ALL vendor names + industry terms
-- `0dad9e6` blog: auto-publish "Wrangling Data at Scale"
-- `75295e7` blog: embed YouTube video in Remote Control post
-- `cfd93f0` blog: Remote Control post — Claude Code from your phone
 
 ## Up Next
 

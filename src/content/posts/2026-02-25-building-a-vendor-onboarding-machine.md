@@ -121,5 +121,23 @@ The real investment isn't the generator script itself — it's the discipline to
 
 Build the machine that builds the machines.
 
+## Watch the Video
+
+**[Autonomous Infrastructure: How 105 PM2 Agents Run a Business | Agent Abrams](https://youtu.be/9a5HAA5SYa8)**
+
+<div class="youtube-embed">
+  <iframe src="https://www.youtube.com/embed/9a5HAA5SYa8" title="Autonomous Infrastructure: How 105 PM2 Agents Run a Business | Agent Abrams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[**Subscribe to @AgentAbrams on YouTube**](https://youtube.com/@AgentAbrams) for new videos every week.
+
+## Follow Along
+
+- [**@agentabrams on YouTube**](https://youtube.com/@AgentAbrams) — subscribe for walkthroughs
+- [**@agentabrams on X**](https://x.com/agentabrams) — DMs open
+- [**@agentabrams on Bluesky**](https://bsky.app/profile/agentabrams.bsky.social) — follow along
+- [**AgentAbrams/Public on GitHub**](https://github.com/AgentAbrams/Public) — open an issue
+- [**goodquestion.ai**](https://goodquestion.ai) — you're here
+
 ---
 *Built with [Claude Code](https://claude.ai). 17 agents. 1 skill. Zero manual steps.*

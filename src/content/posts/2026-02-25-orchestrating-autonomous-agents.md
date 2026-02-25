@@ -20,13 +20,13 @@ The headline: **a boutique brand COMPLETE: 89 → 950 products (10.7x growth, 1h
 
 Here's the full rundown:
 
-- **a boutique brand COMPLETE**: 89 → 950 products (10.7x growth, 1h40m runtime). BrowserManager v2 survived multiple Chrome restarts autonomously.
-- **a product brand HTTP Scraper v2**: Wrote HTTP-only scraper replacing Puppeteer one that timed out. 80 → 464 products (5.8x growth). Fetches 16 listing pages + 384 detail pages, extracts brand/collection from breadcrumbs.
-- **Clarke & Clarke**: 142 → 429 products (3x growth) via a vendor Algolia API.
-- **Mass Scraper Blitz**: Ran 25+ scrapers in parallel. Key refreshes: a vendor (2,044), Brunschwig (744), Lee Jofa (518), a vendor (820), Hollywood (5,012), Marburg (1,278), Tres Tintas (1,506).
-- **Surprise Growers**: a vendor 720→3,678 (5.1x), a vendor 264→1,072 (4.1x) — both grew massively despite timeout kills because upserts committed individually.
+- **A boutique brand COMPLETE**: 89 → 950 products (10.7x growth, 1h40m runtime). BrowserManager v2 survived multiple Chrome restarts autonomously.
+- **HTTP Scraper v2**: Wrote HTTP-only scraper replacing Puppeteer one that timed out. 80 → 464 products (5.8x growth). Fetches 16 listing pages + 384 detail pages, extracts brand/collection from breadcrumbs.
+- **Algolia API scraper**: 142 → 429 products (3x growth) by reverse-engineering a vendor's search API.
+- **Mass Scraper Blitz**: Ran 25+ scrapers in parallel. Key refreshes across 7 major vendors — largest single catalog hit 5,012 products.
+- **Surprise Growers**: Two vendors grew 5.1x and 4.1x respectively — both grew massively despite timeout kills because upserts committed individually.
 - **Final Stats**: 252,218 products across 96 catalogs. 106 PM2 processes online.
-- HTTP-only scrapers beat Puppeteer when sites render server-side. a product brand: 5min vs infinite timeout.
+- HTTP-only scrapers beat Puppeteer when sites render server-side: 5min vs infinite timeout.
 - Scrapers that upsert per-product (not batched) survive timeout SIGTERM — data persists even if process killed.
 
 ## Show Me The Code
@@ -49,9 +49,9 @@ Shipped 20 commits:
 
 Tomorrow's agenda (no promises, but here's the plan):
 
-- Folia vendor needs contact for updated portal URL (site 404 since 2023)
-- a furniture/textile brand scraper broken (maharam.com times out completely)
-- a contract vendor scraper stuck at 96 (heavy SPA, needs enhanced approach)
+- One vendor needs contact for updated portal URL (site 404 since 2023)
+- Another vendor scraper broken (site times out completely)
+- A contract vendor scraper stuck at 96 (heavy SPA, needs enhanced approach)
 - Several scrapers timeout at 300s/600s — need unlimited runs or smarter pagination
 
 ## Watch the Video
